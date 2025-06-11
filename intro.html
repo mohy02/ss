@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>منصة التعليم للجميع</title>
+  <style>
+    body {
+      font-family: 'Tahoma', sans-serif;
+      background-color: #f5f5f5;
+      color: #222;
+      font-size: 18px;
+      line-height: 1.7;
+      margin: 0;
+      padding: 0;
+    }
+    header, footer {
+      background-color: #003366;
+      color: white;
+      padding: 1.5em;
+      text-align: center;
+    }
+    nav a {
+      margin: 0 10px;
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    main {
+      padding: 2em;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .accessibility-tools {
+      background-color: #e0e0e0;
+      padding: 15px;
+      text-align: center;
+      border-radius: 8px;
+      margin-bottom: 25px;
+    }
+    .accessibility-tools button {
+      margin: 5px;
+      padding: 10px 20px;
+      font-size: 16px;
+      border: none;
+      border-radius: 6px;
+      background-color: #004080;
+      color: white;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+    .accessibility-tools button:hover {
+      background-color: #002244;
+    }
+    section {
+      margin-bottom: 30px;
+    }
+    .course {
+      border: 1px solid #ccc;
+      padding: 15px;
+      margin: 15px 0;
+      background-color: #fff;
+      border-radius: 6px;
+    }
+    .course a {
+      color: #004080;
+      font-size: 20px;
+      font-weight: bold;
+      text-decoration: none;
+    }
+    .course a:hover {
+      text-decoration: underline;
+    }
+    footer {
+      margin-top: 40px;
+    }
+    ul {
+      list-style-type: square;
+      padding-right: 20px;
+    }
+    @media (max-width: 600px) {
+      .accessibility-tools button {
+        display: block;
+        width: 100%;
+        margin-bottom: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>منصة التعليم للجميع</h1>
+    <nav>
+      <a href="#services">الخدمات</a>
+      <a href="#courses">الكورسات</a>
+      <a href="#about">من نحن</a>
+      <a href="#contact">للتواصل</a>
+      <a href="#map">خريطة الموقع</a>
+      <a href="#resources">روابط مفيدة</a>
+    </nav>
+  </header>
+
+  <div class="accessibility-tools">
+    <button onclick="increaseFontSize()">تكبير الخط</button>
+    <button onclick="toggleContrast()">تغيير التباين</button>
+    <button onclick="toggleLight()">تغيير درجة الإضاءة</button>
+    <button onclick="readText()">تحويل النص إلى صوت</button>
+    <button onclick="translateToSignLanguage()">ترجمة إلى لغة الإشارة</button>
+  </div>
+
+  <main>
+    <section id="services">
+      <h2>الخدمات التي نقدمها</h2>
+      <ul>
+        <li>مواد تعليمية مصممة خصيصًا لذوي الإعاقة البصرية والسمعية</li>
+        <li>نصوص قابلة للتحويل إلى صوت</li>
+      </ul>
+    </section>
+
+    <section id="courses">
+      <h2>الكورسات التعليمية</h2>
+      <div class="course">
+        <a href="co.html" target="_blank"  title="Go To the course">الذكاء الاصطناعي</a>
+        <p>كورسات مبسطة في أساسيات الذكاء الاصطناعي مقدمة عن طريق دكتور المعز معتصم.</p>
+      </div>
+      <div class="course">
+        <a href="SL.html" target="_blank"  title="Go To the course">لغة الإشارة</a>
+        <p>شرح مفصل لأساسيات لغة الإشارة للمبتدئين بطريقة مبسطة وسهلة الوصول.</p>
+      </div>
+      <div class="course">
+        <a href="cs.html" target="_blank"  title="Go To the course">مهارات الحاسوب</a>
+        <p>دورة تدريبية حول مهارات الحاسوب وفوائده.</p>
+      </div>
+    </section>
+
+    <section id="about">
+      <h2>من نحن</h2>
+      <p>نحن فريق من التربويين والمبرمجين نهدف إلى تقديم بيئة تعليمية شاملة تدعم الأشخاص ذوي الإعاقة وتمنحهم فرصًا متساوية للتعلم والنجاح.</p>
+    </section>
+
+    <section id="contact">
+      <h2>للتواصل</h2>
+      <p>البريد الإلكتروني: info@eduforall14@yahoo.com</p>
+      <p>رقم الهاتف: 00249965271283</p>
+    </section>
+
+    <section id="map">
+      <h2>خريطة الموقع</h2>
+      <ul>
+        <li><a href="#">الرئيسية</a></li>
+        <li><a href="#services">الخدمات</a></li>
+        <li><a href="#courses">الكورسات</a></li>
+        <li><a href="#about">من نحن</a></li>
+        <li><a href="#contact">للتواصل</a></li>
+        <li><a href="#resources">روابط مفيدة</a></li>
+      </ul>
+    </section>
+
+    <section id="resources">
+      <h2>روابط مفيدة</h2>
+      <ul>
+        <li><a href="https://www.w3.org/WAI/" target="_blank">مبادئ الوصول الرقمي W3C</a></li>
+        <li><a href="https://www.signlanguageforum.com/" target="_blank">منتدى لغة الإشارة</a></li>
+        <li><a href="https://www.bookshare.org/" target="_blank">مكتبة Bookshare</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>جميع الحقوق محفوظة &copy; 2025 منصة التعليم للجميع</p>
+  </footer>
+
+  <script>
+    function increaseFontSize() {
+      document.body.style.fontSize = '22px';
+    }
+    function toggleContrast() {
+      document.body.style.backgroundColor = '#000';
+      document.body.style.color = '#fff';
+    }
+    function toggleLight() {
+      const currentBg = document.body.style.backgroundColor;
+      document.body.style.backgroundColor = currentBg === 'lightyellow' ? '#fff' : 'lightyellow';
+    }
+    function readText() {
+      const speech = new SpeechSynthesisUtterance(document.body.innerText);
+      speech.lang = 'ar-SA';
+      window.speechSynthesis.speak(speech);
+    }
+    function translateToSignLanguage() {
+      alert("ترجمة إلى لغة الإشارة غير متوفرة حاليا ولكن سيتم دمجها في الإصدارات القادمة.");
+    }
+  </script>
+</body>
+</html>
