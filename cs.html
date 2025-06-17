@@ -29,17 +29,35 @@
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     }
 
-    a {
+    a, button {
       display: block;
-      margin-top: 15px;
+      width: fit-content;
+      margin: 20px auto;
       text-align: center;
-      color: #007BFF;
-      text-decoration: none;
+      padding: 10px 20px;
       font-size: 18px;
+      text-decoration: none;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    a {
+      color: #007BFF;
+      background: none;
     }
 
     a:hover {
       text-decoration: underline;
+    }
+
+    button {
+      background-color: #007BFF;
+      color: white;
+    }
+
+    button:hover {
+      background-color: #005fa3;
     }
   </style>
 </head>
@@ -67,6 +85,9 @@
   </div>
 
   <a href="index.html">العودة إلى الصفحة الرئيسية</a>
+
+  <!-- ✅ زر الانتقال إلى intro.html -->
+  <button onclick="location.href='intro.html'">الانتقال إلى الصفحة التالية</button>
 
 </body>
 </html>
